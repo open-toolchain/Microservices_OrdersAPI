@@ -1,13 +1,16 @@
 /*eslint-env node */
 /*globals cloudantService */
-var cloudant = require('cloudant')(cloudantService.credentials.url);
+var cloudant = (process.env.IS_TEST === "true") ? 
+	require('cloudant')(cloudantService.url): require('cloudant')(cloudantService.credentials.url);
 
 //Initiate the database.
 cloudant.db.create('orders', function(err/*, body*/) {
     if (!err) {
         console.log('Successfully created database!');
     } else {
-        console.log("Database already exists.");
+		if(process.env.IS_TEST !== "true") {
+			console.log("Database already exists.");
+		}
     }
  });
 
