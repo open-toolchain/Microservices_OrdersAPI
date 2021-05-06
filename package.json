@@ -15,7 +15,7 @@
     "chai": "^3.4.1",
     "chai-as-promised": "6.0.0",
     "colors": "latest",
-    "grunt": "~0.4.5",
+    "grunt": "~1.3.0",
     "grunt-concurrent": "latest",
     "grunt-contrib-jshint": "latest",
     "grunt-contrib-watch": "latest",
