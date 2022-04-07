@@ -75,5 +75,9 @@
     {
         "cve": "SNYK-JS-MINIMIST-559764",
         "alwaysOmit": true
+    },
+    {
+        "cve": "SNYK-JS-MINIMIST-2429795",
+        "alwaysOmit": true
     }
 ]
