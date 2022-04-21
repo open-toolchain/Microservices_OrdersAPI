@@ -1,7 +1,7 @@
 /*eslint-env node */
 /*globals cloudantService */
 var cloudant = (process.env.IS_TEST === "true") ? 
-	require('cloudant')(cloudantService.url): require('cloudant')(cloudantService.credentials.url);
+	require('@cloudant/cloudant')(cloudantService.url): require('@cloudant/cloudant')(cloudantService.credentials.url);
 
 //Initiate the database.
 cloudant.db.create('orders', function(err/*, body*/) {
