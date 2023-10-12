@@ -1,3 +1,4 @@
-## Orders-API microservice
+# This application repo has been removed and is no longer supported.
 
-This is the Orders-API microservice for an online store application. This microservice is written in Node.js, and is required by the UI microservice.
+ It was one of the sample applications for the Micro Services Toolchain Hosted template:
+## https://github.ibm.com/open-toolchain/microservices-toolchain-hosted
